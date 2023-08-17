@@ -1,10 +1,6 @@
 import tkinter as tk
 from tkinter import*
-from tkinter import messagebox
-import datetime
-from tkinter import filedialog
 from PIL import Image, ImageTk, ImageDraw, ImageOps
-import sqlite3
 
 ventana = tk.Tk()
 ventana.geometry('{}x{}+{}+{}'.format(400, 400, 500, 100))
@@ -19,6 +15,10 @@ photo2 = ImageTk.PhotoImage(image2)
 img_label2 = tk.Label(ventana, image=photo2)
 img_label2.image = photo2  # Evita que la imagen se borre automáticamente
 img_label2.place(x=150, y=5)
+
+titulo = Label(text="Hola {nm} en nque puedo ayudarte ?")
+titulo.place(x=50,y=130)
+titulo.config(bg='#fcfcfc')
 
 nombres = Label(text="NOMBRES")
 nombres.place(x=40,y=100)

@@ -31,4 +31,13 @@ nm_entrada.place(x=320,y=135)
 pwd_entrada = tk.Entry(width=35,highlightbackground = "black", highlightcolor= "blue", highlightthickness=1, show="*",justify="center",font=('Times', 10))
 pwd_entrada.place(x=320,y=205)
 
+password = pwd_entrada.get()
+nm = nm_entrada.get()
+def enviar():
+    ventana.destroy()
+    import Bot
+    
+button = tk.Button(ventana, text="Crear",command= enviar)
+button.place(x=400,y=280)
+
 ventana.mainloop()
